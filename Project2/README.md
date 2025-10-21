@@ -20,9 +20,7 @@ Project 2 highlights three key machine learning algorithms:
 
 ## **Gradient Descent**
     * Minimizes a function using the update rule:
-    \[
         x ← x - η∇f(x)
-    \]
     * Stops when the gradient falls below a specific tolerance or after a maximum step limit occurs.
 
 ## **Linear Classifiers**
