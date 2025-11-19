@@ -9,7 +9,7 @@
 ## Overview
 
 This project implements a brute-force SVM for binary and multi-class classification in 2D.
-Instead of using libraries, the max margin sep is found by checking pairs of points, selecting the separator with the max margin.
+Instead of using libraries, the maximum margin separator is found by checking pairs of points and selecting the separator with the maximum margin.
 
 ## Part 1 - Binary SVM
 
@@ -20,7 +20,7 @@ Which computes:
 This formula is used to measure margin distances.
 
 `compute_margin(data, w, b)`
-For each point(x_i, y_i), comput ethe signed dist:
+For each point(x_i, y_i), compute the signed dist:
 
 `γ_i = y_i(w ⋅ pt + b) / ||w||`
 
@@ -74,7 +74,7 @@ For each class c = 1..Y
     * Relabel training dat
         * Class c -> +1
         * All other classes -> -1
-    * Train binary SVM using svm_train_brute
+    * Train a binary SVM using svm_train_brute
     * Store res wC, bC
 
 Returns:
